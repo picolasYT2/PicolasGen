@@ -1,0 +1,52 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package lock extra
+package-lock.json.bak
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Render / cache
+.cache/
+tmp/
+temp/
+
+# Puppeteer
+.puppeteer/
+puppeteer-cache/
+chrome-data/
+user-data-dir/
+
+# Build / dist
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Local runtime files
+*.pid
+*.seed
+*.pid.lock
