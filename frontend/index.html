@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicolasGen | Generador de Alts Roblox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <div class="logo-area">
+                <h1>🎮 PicolasGen</h1>
+                <p>⚡ Generador de cuentas Roblox REALES (con CAPTCHA manual)</p>
+            </div>
+            <div class="badge">🚀 Modo: semi-automático</div>
+        </div>
+
+        <div class="card-action">
+            <button id="btnCreateAccount" class="btn-create">
+                🎲 + Generar cuenta Roblox REAL
+            </button>
+            <div class="stats-info">
+                <span>📊 Cuentas generadas: <strong id="totalCount">0</strong></span>
+                <span>🕒 Última creación: <span id="lastCreated">—</span></span>
+            </div>
+        </div>
+
+        <div class="accounts-section">
+            <div class="section-title">
+                <h2>📋 Cuentas generadas (reales)</h2>
+                <button id="clearAllBtn" class="clear-btn">🗑️ Borrar todas</button>
+            </div>
+            <div class="table-wrapper">
+                <table id="accountsTable">
+                    <thead>
+                        <tr><th>#</th><th>👤 Usuario</th><th>🔐 Contraseña</th><th>📅 Fecha</th><th>📋 Copiar</th><th>🗑️</th></tr>
+                    </thead>
+                    <tbody id="accountsList">
+                        <tr class="empty-row"><td colspan="6">✨ No hay cuentas generadas aún. Presiona el botón.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
