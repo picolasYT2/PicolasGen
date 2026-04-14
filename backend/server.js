@@ -33,15 +33,14 @@ router.post('/create-account', async (req, res) => {
 
     try {
         browser = await puppeteer.launch({
-            headless: false, // Roblox detecta el modo sin cabeza muy rápido
-            defaultViewport: null,
-            args: [
-                '--start-maximized',
-                '--disable-blink-features=AutomationControlled',
-                '--no-sandbox'
-            ],
-            ignoreDefaultArgs: ['--enable-automation']
-        });
+    headless: "new",
+    args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-blink-features=AutomationControlled"
+    ]
+});
 
         const [page] = await browser.pages();
         
