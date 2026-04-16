@@ -13,6 +13,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // =========================
+// SERVIDOR DE ARCHIVOS ESTÁTICOS
+// =========================
+// Servir carpeta tmp para las capturas de pantalla
+app.use('/screenshots', express.static(path.join(__dirname, 'tmp')));
+
+// =========================
 // BACKEND (IMPORTANTE)
 // =========================
 try {
